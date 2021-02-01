@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - DT02GM1._2</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</head>
+<body class="flexGridContainer">
+    <header>
+        <div class="row">
+            <img src="images/LogoRazor.png" alt="logotype" />
+            @functions {
+
+                public string getDate()
+                {
+                    DateTime currentDate = DateTime.Now;
+                    return currentDate.ToString("yyyy-mm-dd");
+                }
+            }
+
+            <p>Dagens datum är: @getDate() </p>
+        </div>
+    </header>
+
+    <aside>
+        <nav class="Navbar">
+            <a href=@Url.Page("Index")>Start</a>
+            <a href=@Url.Page("razor")>Razor</a>
+            <a href=@Url.Page("about")>Om sidan</a>
+        </nav>
+    </aside>
+    <main role="main" class="pb-3">
+        @RenderBody()
+
+    </main>
+
+
+    <footer>
+        <div class="footerDiv">
+            <p>Av Cristina Löfqvist</p>
+            <p>Kontakta mig via e-post: </p>
+            <p>crlo1900@stuent.miun.se</p>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

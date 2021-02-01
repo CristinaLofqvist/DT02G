@@ -1,0 +1,17 @@
+@page
+@model DT02GM1._2.Pages.aboutModel
+@{ ViewData["Title"] = "about"; }
+
+<h1>Information</h1>
+<p>Jag som har gjort sidan heter Cristina Löfqvist och jag studerar webbutvecklingsprogrammet på Mittuniversitetet.</p>
+<p>Just nu läser jag kursen ASP.NET med C#</p>
+<h5>Celcius till Fahrenheit:</h5>
+<div id="space">
+    <p>Idag är det:  <input id="celc" onkeyup="celsiusToF('C')">  grader Celcius</p>
+    <p id="spacepadding"> och:  <input id="fahr" onkeyup="celsiusToF('F')">  grader Fahrenheit</p>
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+
+}

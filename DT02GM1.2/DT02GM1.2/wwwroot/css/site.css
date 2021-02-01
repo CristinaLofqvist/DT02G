@@ -1,0 +1,248 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,700;1,300;1,600;1,700&display=swap');
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+    color: #0366d6;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+input {
+    width: 80px;
+    border-radius: 23px;
+}
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+    align-items: center;
+}
+
+nav a {
+    border-style: solid;
+    max-width: 200px;
+    padding: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.centerdiv {
+    padding: 30px;
+}
+
+    .centerdiv img {
+        padding-left: 20px;
+    }
+
+h1, h2, h3, h4, h5, h6, p, a, li, label, input {
+    font-family: 'Poppins', sans-serif;
+}
+
+.write {
+    padding-top: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+html {
+    height:100%;
+}
+
+p {
+    max-width: 400px;
+}
+
+#spacepadding {
+    padding-left: 5px;
+}
+/*flex grid structure*/
+.flexGridContainer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 200px, auto, 200px;
+    height: 100%;
+    grid-template-areas: "h h h h h h h h h h h h" "a a a m m m m m m m m m" "f f f f f f f f f f f f";
+}
+
+header {
+    grid-area: h;
+    background-color: #f0f0ef;
+}
+
+aside {
+    grid-area: a;
+}
+
+main {
+    grid-area: m;
+}
+
+footer {
+    grid-area: f;
+    background-color: #f0f0ef;
+    align-items:center;
+}
+.footerP {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.footerP p {
+    width: 90%;
+ }
+.tiny {
+    font-size:80%;
+}
+
+.footerDiv {
+   padding:30px;
+}
+
+
+/***Media queries****/
+/*mobile screens*/
+@media only screen and (max-width:500px) {
+    .alignrow {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #space {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Navbar {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        padding-left: 20px;
+    }
+
+    .footerDiv {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*tablet screen size*/
+@media only screen and (min-width: 501px) and (max-width:799px) {
+    .alignrow {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #space {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .Navbar {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        padding-left: 30px;
+    }
+    .footerDiv {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*Large screens*/
+
+@media only screen and (min-width: 800px) {
+    .alignrow {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #space {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .Navbar {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        padding-left: 30px;
+    }
+
+    .footerDiv {
+        display: flex;
+        flex-direction: row;
+    }
+}
